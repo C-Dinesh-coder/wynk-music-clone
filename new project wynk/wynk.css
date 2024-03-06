@@ -1,0 +1,277 @@
+
+body, ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    background-color: #191818;
+}
+h2{
+    color: white;
+    text-align: left;
+    position: relative;
+    bottom: 26px;
+    right: 118px;
+    text-transform: lowercase;
+    font-style: oblique;
+}
+img{
+    width: 40px;
+    height: 40px;
+    border-radius: 38px;
+    display: grid;
+    position: relative;
+    right: 43px;
+    top: 29px;
+    padding: 0%;
+}
+/* Style the navigation bar */
+nav {
+    background-color: #333;
+}
+
+ul {
+    display: flex;
+    justify-content: center; 
+    text-align:left;
+    gap: 1%;
+    border: 1px solid;
+    background-color:  #191919b0;
+    /* padding: 25px ;  */
+}
+
+li {
+    margin:41px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration:none;
+}
+input[type="text"] {
+    color:white ;
+    padding: 10px 42px;
+    border: none;
+    background-color: #333;
+    border: rgb(168, 153, 153) solid 1px;
+    border-radius: 35px;
+    position: relative;
+    /* bottom: 1px;; */
+    left: 45%;
+}
+.sub{
+    position: relative;
+    left: 7%;
+}
+.sub1{
+    position: relative;
+    left: 5%;
+}
+
+button {
+    padding: 9px 23px;
+    background-color: #7e6f6f;
+    color: white;
+    border:1px solid #333;
+    border-radius: 25px;
+    cursor: pointer;
+    position: relative;
+    left:45%;
+}
+
+button:hover {
+    background-color: #4b4949;
+}
+.carousel-inner> div{
+    width: 100px;
+    height: 100px;
+}
+div{
+    display: flex;
+    color: rgba(255, 21, 21, 0.409);
+    justify-content: space-evenly;
+    margin: 5px;
+    text-transform:initial;
+    /* font-size:large; */
+    font-weight: bold;
+    cursor: pointer;
+    /* background-color: #ff1111; */
+}
+div:hover{
+    color: rgba(226, 255, 63, 0.865);
+    text-decoration:none;
+    cursor:pointer;
+    /* background-color: #ff1111;   */
+}
+a:hover{
+    color: rgb(255, 4, 4);
+    text-decoration: underline;
+    cursor: pointer;
+}
+.music-box{
+    margin: 2%;
+    /* width: 96%; */
+    /* height: 42%; */
+    display: grid;
+    padding: 0px;
+    grid-template-areas: 
+    'one two three'
+    'one two three'
+    'one two three';
+    justify-content: space-evenly;
+    gap: 10px;
+    /* grid-template-columns: 50px 50px 50px ; */
+    /* grid-template-rows: 20px 20px 20px; */
+    /* border: white solid 0.5px; */
+    /* border-radius: 20px; */
+    /* border: 2px solid white; */
+ }
+.music-box >div{
+    width: 242px;
+    height: 3px;
+    padding: 80px;
+/* overflow:auto; */
+box-shadow: 1px 2px;
+animation:slider 5s infinite linear;
+    color: rgb(9, 9, 9);
+    gap: 20px;
+    border-radius: 8px;
+    border: 2px solid white;
+}
+ /* @keyframes slider{
+    25%{background-image: url(images/BANNER_4.webp);}
+
+    41%{background-image: url(images/BANNER_2.webp);} 
+
+   60%{background-image: url(images/banner\ 3.webp);}
+} */
+.box1{
+position: relative;
+grid-area: one;
+background-image: url(images/kriti\ banner.webp);
+background-size: cover;
+font-style: oblique;
+font-size: x-large;
+
+}
+
+.box2{
+    grid-area: two;
+    background-image: url(images/BANNER_4.webp );
+    background-size: cover;
+}
+.box3{
+    grid-area: three;
+    background-image: url(images/banner\ 3.webp);
+    background-size: cover;
+    animation-fill-mode: both;
+}
+
+.cointainer{
+    position:sticky;
+    color: aliceblue;
+  margin: 5%;
+  padding: 5%;
+}
+.cointainer>div{
+    display: flex;
+    justify-content: space-evenly;
+    color: white;
+    text-transform: capitalize;
+    background-color: aliceblue;
+
+}
+#h1{
+    margin: 40px;
+    color: white;
+    font-size:x-large;
+}
+h4{
+    color: rgb(254, 16, 16);
+    position: relative;
+    text-align: right;
+    font-size: medium;
+    right: 58px;
+    top: -42px;
+    /* background-color: white; */
+}
+.music{
+    margin: 41px;
+    display: grid;
+    justify-content: space-between;
+    grid-template-areas: 
+    'one two three four five'
+    ' one two three four five'
+    'one two three four five';
+    gap: 20px;
+    /* width: 244px; */
+    /* height: 150px; */
+    color: white;
+    padding: 10px;
+}
+.music1{
+    grid-area: one;
+    background-image: url(images/jailer.webp);
+    background-size: cover;
+}
+.music1:hover{
+    width: 175px;
+    height: 175px;
+    transition: 0.5s;
+}
+.music2{
+    grid-area: two;
+    background-image: url(./images/thunivu.webp);
+    background-size: cover;
+}
+.music2:hover{
+    width: 175px;
+    height: 175px;
+    transition: 0.5s;
+}
+.music3{
+    grid-area: three;
+    background-image: url(./images/leo.webp);
+    background-size: cover;
+}
+.music3:hover{
+    width: 175px;
+    height: 175px;
+    transition: 0.5s;
+}
+.music4{
+    grid-area: four;
+    background-image: url(./images/dhanush.webp);
+    background-size: cover;
+}
+.music4:hover{
+    width: 175px;
+    height: 175px;
+    transition: 0.5s;
+}
+.music5{
+    grid-area: five;
+    background-image: url(./images/vikram.webp);
+    background-size: cover;
+}
+.music5:hover{
+    width: 175px;
+    height: 175px;
+    transition: 0.5s;
+}
+
+.music>div{
+    margin: 0px;
+    display: flex;
+    justify-content: space-evenly;
+    width: 164px;
+    gap: 20px;
+    border-radius: 10px;
+    height: 166px;
+    color: rgb(1, 2, 3);
+    border: 1px solid white;
+}
